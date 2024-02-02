@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Investimentos</title>
+    <link rel="stylesheet" href="style.css"> <!-- Arquivo de CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Investimentos</h1>
+        <form id="simuladorForm">
+            <input type="number" step="0.01" id="valorConta" placeholder="Valor em conta" required>
+            <input type="number" step="0.01" id="valorMensal" placeholder="Valor mensal de investimento" required>
+            <input type="number" step="0.01" id="rentabilidadeMedia" placeholder="Rentabilidade média (%)" required>
+            <input type="number" step="0.01" id="valorAlmejado" placeholder="Valor em conta almejado" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <h2 id="tempoNecessario"></h2>
+        <canvas id="graficoInvestimento"></canvas>
+    </div>
+    <script src="script.js"></script> <!-- Arquivo de JavaScript -->
+</body>
+</html>
